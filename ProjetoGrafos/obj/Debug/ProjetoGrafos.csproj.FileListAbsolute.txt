@@ -1,0 +1,16 @@
+C:\Users\cleys\OneDrive\Documentos\Facens\Estrutura de Dados\ProjetoGrafosExercicio\ProjetoGrafos\bin\Debug\ProjetoGrafos.exe.config
+C:\Users\cleys\OneDrive\Documentos\Facens\Estrutura de Dados\ProjetoGrafosExercicio\ProjetoGrafos\bin\Debug\ProjetoGrafos.exe
+C:\Users\cleys\OneDrive\Documentos\Facens\Estrutura de Dados\ProjetoGrafosExercicio\ProjetoGrafos\bin\Debug\ProjetoGrafos.pdb
+C:\Users\cleys\OneDrive\Documentos\Facens\Estrutura de Dados\ProjetoGrafosExercicio\ProjetoGrafos\bin\Debug\Microsoft.GLEE.dll
+C:\Users\cleys\OneDrive\Documentos\Facens\Estrutura de Dados\ProjetoGrafosExercicio\ProjetoGrafos\bin\Debug\Microsoft.GLEE.Drawing.dll
+C:\Users\cleys\OneDrive\Documentos\Facens\Estrutura de Dados\ProjetoGrafosExercicio\ProjetoGrafos\bin\Debug\Microsoft.GLEE.GraphViewerGDI.dll
+C:\Users\cleys\OneDrive\Documentos\Facens\Estrutura de Dados\ProjetoGrafosExercicio\ProjetoGrafos\bin\Debug\Microsoft.GLEE.pdb
+C:\Users\cleys\OneDrive\Documentos\Facens\Estrutura de Dados\ProjetoGrafosExercicio\ProjetoGrafos\bin\Debug\Microsoft.GLEE.Drawing.pdb
+C:\Users\cleys\OneDrive\Documentos\Facens\Estrutura de Dados\ProjetoGrafosExercicio\ProjetoGrafos\bin\Debug\Microsoft.GLEE.GraphViewerGDI.pdb
+C:\Users\cleys\OneDrive\Documentos\Facens\Estrutura de Dados\ProjetoGrafosExercicio\ProjetoGrafos\obj\Debug\ProjetoGrafos.csprojAssemblyReference.cache
+C:\Users\cleys\OneDrive\Documentos\Facens\Estrutura de Dados\ProjetoGrafosExercicio\ProjetoGrafos\obj\Debug\ProjetoGrafos.Principal.resources
+C:\Users\cleys\OneDrive\Documentos\Facens\Estrutura de Dados\ProjetoGrafosExercicio\ProjetoGrafos\obj\Debug\ProjetoGrafos.Properties.Resources.resources
+C:\Users\cleys\OneDrive\Documentos\Facens\Estrutura de Dados\ProjetoGrafosExercicio\ProjetoGrafos\obj\Debug\ProjetoGrafos.csproj.GenerateResource.cache
+C:\Users\cleys\OneDrive\Documentos\Facens\Estrutura de Dados\ProjetoGrafosExercicio\ProjetoGrafos\obj\Debug\ProjetoGrafos.csproj.CopyComplete
+C:\Users\cleys\OneDrive\Documentos\Facens\Estrutura de Dados\ProjetoGrafosExercicio\ProjetoGrafos\obj\Debug\ProjetoGrafos.exe
+C:\Users\cleys\OneDrive\Documentos\Facens\Estrutura de Dados\ProjetoGrafosExercicio\ProjetoGrafos\obj\Debug\ProjetoGrafos.pdb

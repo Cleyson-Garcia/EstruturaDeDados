@@ -54,6 +54,11 @@ namespace ProjetoGrafos.DataStructure
         /// <returns>O nó encontrado ou nulo caso não encontre nada.</returns>
         private Node Find(string name)
         {
+            foreach(Node n in nodes)
+            {
+                if (n.Name.Equals(name))
+                    return n;
+            }
             return null;
         }
 
@@ -64,6 +69,12 @@ namespace ProjetoGrafos.DataStructure
         /// <param name="info">A informação a ser armazenada no nó.</param>
         public void AddNode(string name)
         {
+            
+            if(Find(name)==null)
+            {
+                nodes.Add(new Node(name,null));
+            }
+            
         }
 
         /// <summary>
@@ -73,6 +84,10 @@ namespace ProjetoGrafos.DataStructure
         /// <param name="info">A informação a ser armazenada no nó.</param>
         public void AddNode(string name, object info)
         {
+            if (Find(name) == null)
+            {
+                nodes.Add(new Node(name, null));
+            }
         }
 
         /// <summary>
@@ -81,6 +96,11 @@ namespace ProjetoGrafos.DataStructure
         /// <param name="name">O nome do nó a ser removido.</param>
         public void RemoveNode(string name)
         {
+            Node n = Find(name);
+            if(n!=null)
+            {
+                nodes.Remove(n);
+            }
         }
 
         /// <summary>
@@ -91,6 +111,12 @@ namespace ProjetoGrafos.DataStructure
         /// <param name="cost">O cust associado.</param>
         public void AddEdge(string from, string to, double cost)
         {
+            Node f = Find(from);
+            Node t = Find(to);
+            if(f!=null && t!=null)
+            {
+                f.AddEdge(t, cost);
+            }
         }
 
         /// <summary>
@@ -100,7 +126,18 @@ namespace ProjetoGrafos.DataStructure
         /// <returns></returns>
         public Node[] GetNeighbours(string from)
         {
-            return null;
+            Node f = Find(from);
+            Node[] node = new Node[f.Edges.Count];
+            if(f!=null)
+            {
+                int i = 0;
+                foreach (Edge e in f.Edges)
+                {
+                    node[i] = e.To;
+                    i++;
+                }
+            }
+            return node;
         }
 
         /// <summary>

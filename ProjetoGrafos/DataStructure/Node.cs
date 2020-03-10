@@ -60,6 +60,7 @@ namespace ProjetoGrafos.DataStructure
         /// <param name="to">O nó destino.</param>
         public void AddEdge(Node to)
         {
+            this.Edges.Add(new Edge(this, to, 0));
         }
 
         /// <summary>
@@ -69,6 +70,7 @@ namespace ProjetoGrafos.DataStructure
         /// <param name="cost">O custo associado ao arco.</param>
         public void AddEdge(Node to, double cost)
         {
+            this.Edges.Add(new Edge(this, to, cost));
         }
 
         #endregion
