@@ -148,7 +148,35 @@ namespace ProjetoGrafos.DataStructure
         /// <returns></returns>
         public bool IsValidPath(ref Node[] nodes, params string[] path)
         {
-            return false;
+            nodes = new Node[path.Length];
+            bool val=true;
+            for (int i=0;i<(path.Length-1);i++)
+            {
+                if (val)
+                {
+                    Node n = Find(path[i]);
+                    val = false;
+                    foreach (Edge e in n.Edges)
+                    {
+                        if (e.To.Equals(Find(path[i + 1])))
+                        {
+                            val = true;
+                            break;
+                        }    
+                    }
+                }
+                else
+                    return false;
+            }
+            if(!val)
+            {
+                return false;
+            }
+            for (int i = 0; i < (path.Length); i++)
+            {
+                nodes[i] = Find(path[i]);
+            }
+            return true;
         }
 
         #endregion
