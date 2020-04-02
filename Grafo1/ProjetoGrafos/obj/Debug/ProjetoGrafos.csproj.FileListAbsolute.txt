@@ -14,3 +14,17 @@ C:\Users\cleys\OneDrive\Documentos\Facens\Estrutura de Dados\ProjetoGrafosExerci
 C:\Users\cleys\OneDrive\Documentos\Facens\Estrutura de Dados\ProjetoGrafosExercicio\ProjetoGrafos\obj\Debug\ProjetoGrafos.csproj.CopyComplete
 C:\Users\cleys\OneDrive\Documentos\Facens\Estrutura de Dados\ProjetoGrafosExercicio\ProjetoGrafos\obj\Debug\ProjetoGrafos.exe
 C:\Users\cleys\OneDrive\Documentos\Facens\Estrutura de Dados\ProjetoGrafosExercicio\ProjetoGrafos\obj\Debug\ProjetoGrafos.pdb
+C:\Users\Usuario\Documents\GitHub\EstruturaDeDados\Grafo1\ProjetoGrafos\bin\Debug\ProjetoGrafos.exe.config
+C:\Users\Usuario\Documents\GitHub\EstruturaDeDados\Grafo1\ProjetoGrafos\bin\Debug\ProjetoGrafos.exe
+C:\Users\Usuario\Documents\GitHub\EstruturaDeDados\Grafo1\ProjetoGrafos\bin\Debug\ProjetoGrafos.pdb
+C:\Users\Usuario\Documents\GitHub\EstruturaDeDados\Grafo1\ProjetoGrafos\bin\Debug\Microsoft.GLEE.pdb
+C:\Users\Usuario\Documents\GitHub\EstruturaDeDados\Grafo1\ProjetoGrafos\bin\Debug\Microsoft.GLEE.Drawing.pdb
+C:\Users\Usuario\Documents\GitHub\EstruturaDeDados\Grafo1\ProjetoGrafos\bin\Debug\Microsoft.GLEE.GraphViewerGDI.pdb
+C:\Users\Usuario\Documents\GitHub\EstruturaDeDados\Grafo1\ProjetoGrafos\obj\Debug\ProjetoGrafos.csprojAssemblyReference.cache
+C:\Users\Usuario\Documents\GitHub\EstruturaDeDados\Grafo1\ProjetoGrafos\obj\Debug\ProjetoGrafos.Principal.resources
+C:\Users\Usuario\Documents\GitHub\EstruturaDeDados\Grafo1\ProjetoGrafos\obj\Debug\ProjetoGrafos.Properties.Resources.resources
+C:\Users\Usuario\Documents\GitHub\EstruturaDeDados\Grafo1\ProjetoGrafos\obj\Debug\ProjetoGrafos.csproj.GenerateResource.cache
+C:\Users\Usuario\Documents\GitHub\EstruturaDeDados\Grafo1\ProjetoGrafos\obj\Debug\ProjetoGrafos.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Documents\GitHub\EstruturaDeDados\Grafo1\ProjetoGrafos\obj\Debug\ProjetoGrafos.csproj.CopyComplete
+C:\Users\Usuario\Documents\GitHub\EstruturaDeDados\Grafo1\ProjetoGrafos\obj\Debug\ProjetoGrafos.exe
+C:\Users\Usuario\Documents\GitHub\EstruturaDeDados\Grafo1\ProjetoGrafos\obj\Debug\ProjetoGrafos.pdb
