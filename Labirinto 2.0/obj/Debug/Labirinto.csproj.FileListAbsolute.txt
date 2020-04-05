@@ -8,3 +8,13 @@ C:\Users\Usuario\Desktop\Placeholder\Labirinto 2.0 - Implementar\bin\Debug\Labir
 C:\Users\Usuario\Desktop\Placeholder\Labirinto 2.0 - Implementar\bin\Debug\Labirinto.pdb
 C:\Users\Usuario\Desktop\Placeholder\Labirinto 2.0 - Implementar\obj\Debug\Labirinto.exe
 C:\Users\Usuario\Desktop\Placeholder\Labirinto 2.0 - Implementar\obj\Debug\Labirinto.pdb
+C:\Users\Usuario\Documents\GitHub\EstruturaDeDados\Labirinto 2.0\bin\Debug\Labirinto.exe.config
+C:\Users\Usuario\Documents\GitHub\EstruturaDeDados\Labirinto 2.0\bin\Debug\Labirinto.exe
+C:\Users\Usuario\Documents\GitHub\EstruturaDeDados\Labirinto 2.0\bin\Debug\Labirinto.pdb
+C:\Users\Usuario\Documents\GitHub\EstruturaDeDados\Labirinto 2.0\obj\Debug\Labirinto.csprojAssemblyReference.cache
+C:\Users\Usuario\Documents\GitHub\EstruturaDeDados\Labirinto 2.0\obj\Debug\Labirinto.Principal.resources
+C:\Users\Usuario\Documents\GitHub\EstruturaDeDados\Labirinto 2.0\obj\Debug\Labirinto.Properties.Resources.resources
+C:\Users\Usuario\Documents\GitHub\EstruturaDeDados\Labirinto 2.0\obj\Debug\Labirinto.csproj.GenerateResource.cache
+C:\Users\Usuario\Documents\GitHub\EstruturaDeDados\Labirinto 2.0\obj\Debug\Labirinto.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Documents\GitHub\EstruturaDeDados\Labirinto 2.0\obj\Debug\Labirinto.exe
+C:\Users\Usuario\Documents\GitHub\EstruturaDeDados\Labirinto 2.0\obj\Debug\Labirinto.pdb

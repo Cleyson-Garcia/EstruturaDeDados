@@ -39,8 +39,6 @@ namespace ProjetoGrafos.DataStructure
                     }
                    
                 }
-
-                
                 menor = pq.Pop();
                 while(menor.GetDestino().Visited)
                 {
@@ -48,13 +46,10 @@ namespace ProjetoGrafos.DataStructure
                 }
                 n = menor.GetDestino();
                 n.Visited = true;
+                n.Parent = menor.GetRota().From;
                 n.Dist = menor.GetDist();
                 l.Add(n);
-
-                
-               
             }
-
             return l;
         }
 
