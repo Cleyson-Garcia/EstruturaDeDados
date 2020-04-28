@@ -25,7 +25,11 @@ namespace ProjetoGrafos.DataStructure
         /// <summary>
         /// A lista de arcos associada ao nó.
         /// </summary>
-        public List<Edge> Edges { get; private set; }
+        public List<Edge> EdgesVindo { get; private set; }
+
+        public List<Edge> EdgesIndo { get; private set; }
+        public bool Usando { get; set; }
+        public Node Parent { get; set; }
 
         #endregion
 
@@ -36,7 +40,8 @@ namespace ProjetoGrafos.DataStructure
         /// </summary>
         public Node()
         {
-            this.Edges = new List<Edge>();
+            this.EdgesIndo = new List<Edge>();
+            this.EdgesVindo = new List<Edge>();
         }
 
         /// <summary>
@@ -60,7 +65,9 @@ namespace ProjetoGrafos.DataStructure
         /// <param name="to">O nó destino.</param>
         public void AddEdge(Node to)
         {
-            this.Edges.Add(new Edge(this, to, 0));
+            Edge e = new Edge(this, to, 0);
+            this.EdgesIndo.Add(e);
+            to.EdgesVindo.Add(e);
         }
 
         /// <summary>
@@ -70,7 +77,9 @@ namespace ProjetoGrafos.DataStructure
         /// <param name="cost">O custo associado ao arco.</param>
         public void AddEdge(Node to, double cost)
         {
-            this.Edges.Add(new Edge(this, to, cost));
+            Edge e = new Edge(this, to, cost);
+            this.EdgesIndo.Add(e);
+            to.EdgesVindo.Add(e);
         }
 
         #endregion

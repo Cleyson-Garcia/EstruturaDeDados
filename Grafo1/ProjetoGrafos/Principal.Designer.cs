@@ -42,12 +42,13 @@
             this.txtNodeName = new System.Windows.Forms.TextBox();
             this.lblNodeName = new System.Windows.Forms.Label();
             this.gbOperations = new System.Windows.Forms.GroupBox();
-            this.lblNoodeNeighbourhood = new System.Windows.Forms.Label();
-            this.cmbNodeNeighbourhood = new System.Windows.Forms.ComboBox();
-            this.btnShowNeighbours = new System.Windows.Forms.Button();
-            this.lblPath = new System.Windows.Forms.Label();
-            this.txtPath = new System.Windows.Forms.TextBox();
             this.btnShowPath = new System.Windows.Forms.Button();
+            this.txtPath = new System.Windows.Forms.TextBox();
+            this.lblPath = new System.Windows.Forms.Label();
+            this.btnShowNeighbours = new System.Windows.Forms.Button();
+            this.cmbNodeNeighbourhood = new System.Windows.Forms.ComboBox();
+            this.lblNoodeNeighbourhood = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.gbGraph.SuspendLayout();
             this.gbOperations.SuspendLayout();
             this.SuspendLayout();
@@ -62,6 +63,7 @@
             // 
             // gbGraph
             // 
+            this.gbGraph.Controls.Add(this.button1);
             this.gbGraph.Controls.Add(this.btnRemoveArcs);
             this.gbGraph.Controls.Add(this.lstArcs);
             this.gbGraph.Controls.Add(this.btnAddArc);
@@ -195,23 +197,31 @@
             this.gbOperations.TabStop = false;
             this.gbOperations.Text = "Operações";
             // 
-            // lblNoodeNeighbourhood
+            // btnShowPath
             // 
-            this.lblNoodeNeighbourhood.AutoSize = true;
-            this.lblNoodeNeighbourhood.Location = new System.Drawing.Point(17, 28);
-            this.lblNoodeNeighbourhood.Name = "lblNoodeNeighbourhood";
-            this.lblNoodeNeighbourhood.Size = new System.Drawing.Size(24, 13);
-            this.lblNoodeNeighbourhood.TabIndex = 0;
-            this.lblNoodeNeighbourhood.Text = "Nó:";
+            this.btnShowPath.Location = new System.Drawing.Point(202, 86);
+            this.btnShowPath.Name = "btnShowPath";
+            this.btnShowPath.Size = new System.Drawing.Size(96, 23);
+            this.btnShowPath.TabIndex = 15;
+            this.btnShowPath.Text = "Validar Caminho";
+            this.btnShowPath.UseVisualStyleBackColor = true;
+            this.btnShowPath.Click += new System.EventHandler(this.btnShowPath_Click);
             // 
-            // cmbNodeNeighbourhood
+            // txtPath
             // 
-            this.cmbNodeNeighbourhood.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbNodeNeighbourhood.FormattingEnabled = true;
-            this.cmbNodeNeighbourhood.Location = new System.Drawing.Point(47, 25);
-            this.cmbNodeNeighbourhood.Name = "cmbNodeNeighbourhood";
-            this.cmbNodeNeighbourhood.Size = new System.Drawing.Size(69, 21);
-            this.cmbNodeNeighbourhood.TabIndex = 11;
+            this.txtPath.Location = new System.Drawing.Point(47, 60);
+            this.txtPath.Name = "txtPath";
+            this.txtPath.Size = new System.Drawing.Size(251, 20);
+            this.txtPath.TabIndex = 14;
+            // 
+            // lblPath
+            // 
+            this.lblPath.AutoSize = true;
+            this.lblPath.Location = new System.Drawing.Point(12, 63);
+            this.lblPath.Name = "lblPath";
+            this.lblPath.Size = new System.Drawing.Size(29, 13);
+            this.lblPath.TabIndex = 13;
+            this.lblPath.Text = "Nós:";
             // 
             // btnShowNeighbours
             // 
@@ -223,31 +233,32 @@
             this.btnShowNeighbours.UseVisualStyleBackColor = true;
             this.btnShowNeighbours.Click += new System.EventHandler(this.btnShowNeighbours_Click);
             // 
-            // lblPath
+            // cmbNodeNeighbourhood
             // 
-            this.lblPath.AutoSize = true;
-            this.lblPath.Location = new System.Drawing.Point(12, 63);
-            this.lblPath.Name = "lblPath";
-            this.lblPath.Size = new System.Drawing.Size(29, 13);
-            this.lblPath.TabIndex = 13;
-            this.lblPath.Text = "Nós:";
+            this.cmbNodeNeighbourhood.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbNodeNeighbourhood.FormattingEnabled = true;
+            this.cmbNodeNeighbourhood.Location = new System.Drawing.Point(47, 25);
+            this.cmbNodeNeighbourhood.Name = "cmbNodeNeighbourhood";
+            this.cmbNodeNeighbourhood.Size = new System.Drawing.Size(69, 21);
+            this.cmbNodeNeighbourhood.TabIndex = 11;
             // 
-            // txtPath
+            // lblNoodeNeighbourhood
             // 
-            this.txtPath.Location = new System.Drawing.Point(47, 60);
-            this.txtPath.Name = "txtPath";
-            this.txtPath.Size = new System.Drawing.Size(251, 20);
-            this.txtPath.TabIndex = 14;
+            this.lblNoodeNeighbourhood.AutoSize = true;
+            this.lblNoodeNeighbourhood.Location = new System.Drawing.Point(17, 28);
+            this.lblNoodeNeighbourhood.Name = "lblNoodeNeighbourhood";
+            this.lblNoodeNeighbourhood.Size = new System.Drawing.Size(24, 13);
+            this.lblNoodeNeighbourhood.TabIndex = 0;
+            this.lblNoodeNeighbourhood.Text = "Nó:";
             // 
-            // btnShowPath
+            // button1
             // 
-            this.btnShowPath.Location = new System.Drawing.Point(202, 86);
-            this.btnShowPath.Name = "btnShowPath";
-            this.btnShowPath.Size = new System.Drawing.Size(96, 23);
-            this.btnShowPath.TabIndex = 15;
-            this.btnShowPath.Text = "Validar Caminho";
-            this.btnShowPath.UseVisualStyleBackColor = true;
-            this.btnShowPath.Click += new System.EventHandler(this.btnShowPath_Click);
+            this.button1.Location = new System.Drawing.Point(47, 209);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(96, 23);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "Teste";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // Principal
             // 
@@ -289,6 +300,7 @@
         private System.Windows.Forms.ComboBox cmbNodeNeighbourhood;
         private System.Windows.Forms.Label lblNoodeNeighbourhood;
         private System.Windows.Forms.Button btnShowPath;
+        private System.Windows.Forms.Button button1;
     }
 }
 

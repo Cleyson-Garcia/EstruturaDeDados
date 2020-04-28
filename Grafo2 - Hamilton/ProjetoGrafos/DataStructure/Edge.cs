@@ -26,6 +26,8 @@ namespace ProjetoGrafos.DataStructure
         /// O custo associado ao arco.
         /// </summary>
         public double Cost { get; set; }
+        public bool Testado { get; set; }
+
 
         #endregion
 
@@ -52,6 +54,7 @@ namespace ProjetoGrafos.DataStructure
             this.From = from;
             this.To = to;
             this.Cost = cost;
+            this.Testado = false;
         }
 
         #endregion

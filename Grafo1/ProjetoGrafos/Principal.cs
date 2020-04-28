@@ -214,7 +214,12 @@ namespace ProjetoGrafos
                 }
                 SetGraphControls(false);
                 DrawGraph(pathNodes);
-            }
+                  
+        }
+
+        public void btnTeste(object sender, EventArgs e)
+        {
+
         }
 
         #endregion

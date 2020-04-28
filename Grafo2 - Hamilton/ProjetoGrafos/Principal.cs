@@ -51,30 +51,18 @@ namespace ProjetoGrafos
             List<EDA.Edge> edges = new List<EDA.Edge>();
             EDA.Node[] nodes = this.graph.Nodes;
             // Limpa controles..
-            cmbNodeNeighbourhood.Items.Clear();
-            lstArcs.Items.Clear();
             // Carrega nós e agrupa arcos..
-            foreach (EDA.Node node in nodes)
-            {
-                edges.AddRange(node.Edges);
-                // Adiciona nós ao combo..
-                cmbNodeNeighbourhood.Items.Add(node);
-            }
             // Adiciona os arcos ao listbox..
-            foreach (EDA.Edge edge in edges)
-            {
-                lstArcs.Items.Add(edge);
-            }
             if (drawGraph)
             {
-                DrawGraph(null);
+                DrawGraph(null,null);
             }
         }
 
         /// <summary>
         /// Desenha o grafo atual.
         /// </summary>
-        private void DrawGraph(EDA.Node[] highlightedNodes)
+        private void DrawGraph(EDA.Node[] highlightedNodes, EDA.Edge[] highlightedEdges)
         {
             List<EDA.Edge> edges = new List<EDA.Edge>();
             Glee.Graph drawingGraph = new Glee.Graph("Grafo - EDA2");
@@ -88,12 +76,16 @@ namespace ProjetoGrafos
                     drawingNode.Attr.Color = Glee.Color.Red;
                 }
                 // Consolida os arcos..
-                edges.AddRange(node.Edges);
+                edges.AddRange(node.EdgesIndo);
             }
             foreach (EDA.Edge edge in edges)
             {
                 Glee.Edge drawingEdge = drawingGraph.AddEdge(edge.From.Name, edge.To.Name);
                 drawingEdge.Attr.Label = String.Format("{0:F4}", edge.Cost);
+                if (highlightedEdges != null && Array.IndexOf(highlightedEdges, edge) >= 0)
+                {
+                    drawingEdge.Attr.Color = Glee.Color.Red;
+                }
             }
             // Gera controle de desenho..
             GleeUI.GViewer viewer = new GleeUI.GViewer();
@@ -117,7 +109,7 @@ namespace ProjetoGrafos
         /// <param name="e"></param>
         private void btnCreateGraph_Click(object sender, EventArgs e)
         {
-                this.graph.CreateGraph();
+            this.graph.CreateGraph();
             SetGraphControls();
         }
 
@@ -137,50 +129,29 @@ namespace ProjetoGrafos
             // Adiciona nós ao grafo..
             foreach (EDA.Node node in this.graph.Nodes)
             {
-                node.Edges.Clear();
+                node.EdgesIndo.Clear();
+                node.EdgesVindo.Clear();
             }
             SetGraphControls();
         }
 
-        /// <summary>
-        /// Clique do botão de exibir vizinhos.
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void btnShowNeighbours_Click(object sender, EventArgs e)
+        private void btnTeste_Click(object sender, EventArgs e)
         {
-            if (cmbNodeNeighbourhood.SelectedItem != null)
-            {
-                string nodeFrom = (cmbNodeNeighbourhood.SelectedItem as EDA.Node).Name; 
-                EDA.Node[] neighbours = this.graph.GetNeighbours(nodeFrom);
-                SetGraphControls(false);
-                DrawGraph(neighbours);
-            }
-        }
+            var tupp = this.graph.Setup();
+            EDA.Node[] retornoNode = tupp.Item1;
+            EDA.Edge[] edges = tupp.Item2;
 
-        /// <summary>
-        /// Clique do botão de validar caminhos.
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void btnShowPath_Click(object sender, EventArgs e)
-        {
-            if (!String.IsNullOrEmpty(txtPath.Text.Trim()))
+            if (retornoNode == null)
             {
-                EDA.Node[] pathNodes = null;
-                string[] path = txtPath.Text.Split(new char[] { '-' }, StringSplitOptions.RemoveEmptyEntries);
-                // Verifica se o caminho existe..
-                if (this.graph.IsValidPath(ref pathNodes, path))
-                {
-                    MessageBox.Show("O caminho é válido", "Validação de Caminho", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-                else
-                {
-                    MessageBox.Show("O caminho é inválido", "Validação de Caminho", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                SetGraphControls(false);
-                DrawGraph(pathNodes);
+                MessageBox.Show("Não existe caminho Hemiltoniano", "Validação de Caminho", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            else
+            {
+                SetGraphControls(false);
+                DrawGraph(retornoNode, edges);
+            }
+        
+            
         }
 
         #endregion
