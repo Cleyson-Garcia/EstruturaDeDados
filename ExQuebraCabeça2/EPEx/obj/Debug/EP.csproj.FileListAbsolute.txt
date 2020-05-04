@@ -1,0 +1,9 @@
+C:\Users\Usuario\Documents\GitHub\EstruturaDeDados\ExQuebraCabeça2\EPEx\obj\Debug\EP.csprojAssemblyReference.cache
+C:\Users\Usuario\Documents\GitHub\EstruturaDeDados\ExQuebraCabeça2\EPEx\obj\Debug\EP.EP.resources
+C:\Users\Usuario\Documents\GitHub\EstruturaDeDados\ExQuebraCabeça2\EPEx\obj\Debug\EP.csproj.GenerateResource.cache
+C:\Users\Usuario\Documents\GitHub\EstruturaDeDados\ExQuebraCabeça2\EPEx\obj\Debug\EP.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Documents\GitHub\EstruturaDeDados\ExQuebraCabeça2\EPEx\bin\Debug\EP.exe.config
+C:\Users\Usuario\Documents\GitHub\EstruturaDeDados\ExQuebraCabeça2\EPEx\bin\Debug\EP.exe
+C:\Users\Usuario\Documents\GitHub\EstruturaDeDados\ExQuebraCabeça2\EPEx\bin\Debug\EP.pdb
+C:\Users\Usuario\Documents\GitHub\EstruturaDeDados\ExQuebraCabeça2\EPEx\obj\Debug\EP.exe
+C:\Users\Usuario\Documents\GitHub\EstruturaDeDados\ExQuebraCabeça2\EPEx\obj\Debug\EP.pdb
