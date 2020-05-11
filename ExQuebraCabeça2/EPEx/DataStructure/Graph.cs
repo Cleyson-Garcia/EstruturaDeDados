@@ -78,7 +78,7 @@ namespace ProjetoGrafos.DataStructure
             {
                 throw new Exception("Um nó com o mesmo nome já foi adicionado a este grafo.");
             }
-            this.nodes.Add(new Node(name, info, 0));
+            this.nodes.Add(new Node(name, info, 0,null));
         }
 
         /// <summary>

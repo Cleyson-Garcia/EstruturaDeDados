@@ -7,3 +7,11 @@ C:\Users\Usuario\Documents\GitHub\EstruturaDeDados\ExQuebraCabeça2\EPEx\bin\Deb
 C:\Users\Usuario\Documents\GitHub\EstruturaDeDados\ExQuebraCabeça2\EPEx\bin\Debug\EP.pdb
 C:\Users\Usuario\Documents\GitHub\EstruturaDeDados\ExQuebraCabeça2\EPEx\obj\Debug\EP.exe
 C:\Users\Usuario\Documents\GitHub\EstruturaDeDados\ExQuebraCabeça2\EPEx\obj\Debug\EP.pdb
+C:\Users\cleys\OneDrive\Documentos\GitHub\EstruturaDeDados\ExQuebraCabeça2\EPEx\bin\Debug\EP.exe.config
+C:\Users\cleys\OneDrive\Documentos\GitHub\EstruturaDeDados\ExQuebraCabeça2\EPEx\bin\Debug\EP.exe
+C:\Users\cleys\OneDrive\Documentos\GitHub\EstruturaDeDados\ExQuebraCabeça2\EPEx\bin\Debug\EP.pdb
+C:\Users\cleys\OneDrive\Documentos\GitHub\EstruturaDeDados\ExQuebraCabeça2\EPEx\obj\Debug\EP.csprojAssemblyReference.cache
+C:\Users\cleys\OneDrive\Documentos\GitHub\EstruturaDeDados\ExQuebraCabeça2\EPEx\obj\Debug\EP.EP.resources
+C:\Users\cleys\OneDrive\Documentos\GitHub\EstruturaDeDados\ExQuebraCabeça2\EPEx\obj\Debug\EP.csproj.GenerateResource.cache
+C:\Users\cleys\OneDrive\Documentos\GitHub\EstruturaDeDados\ExQuebraCabeça2\EPEx\obj\Debug\EP.exe
+C:\Users\cleys\OneDrive\Documentos\GitHub\EstruturaDeDados\ExQuebraCabeça2\EPEx\obj\Debug\EP.pdb

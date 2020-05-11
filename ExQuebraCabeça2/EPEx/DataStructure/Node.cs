@@ -29,6 +29,8 @@ namespace ProjetoGrafos.DataStructure
 
         public int Nivel { get; set; }
 
+        public Node Parent { get; set; }
+
         #endregion
 
         #region Construtores
@@ -46,11 +48,12 @@ namespace ProjetoGrafos.DataStructure
         /// </summary>
         /// <param name="name">O nome do nó.</param>
         /// <param name="info">A informação armazenada no nó.</param>
-        public Node(string name, int[] info, int nivel) : this()
+        public Node(string name, int[] info, int nivel,Node parent) : this()
         {
             this.Name = name;
             this.Info = info;
             this.Nivel = nivel;
+            this.Parent = parent;
         }
 
         public Node(int[] info, int nivel) : this()
@@ -82,6 +85,12 @@ namespace ProjetoGrafos.DataStructure
         {
             this.Edges.Add(new Edge(this, to, cost));
         }
+
+        public bool Equals(Node n)
+        {
+            return this.Name.Equals(n.Name);
+        }
+
 
         #endregion
 
